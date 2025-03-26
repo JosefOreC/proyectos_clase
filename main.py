@@ -1,6 +1,9 @@
 #Determina el mayor de tres numeros ingresados por el usuario
 
-lista_numeros=[int(input(f"Ingrese el {i+1}° número: ")) for i in range(3)]
+def ingresar_datos():
+    return [int(input(f"Ingrese el {i+1}° número: ")) for i in range(3)]
+
+lista_numeros=ingresar_datos()
 
 mayor_numero=lista_numeros[0]
 for i in range(1,len(lista_numeros)):
